@@ -1,0 +1,22 @@
+{
+  "default_urls": [
+    "https://example-torrent-site.com",
+    "https://another-torrent-site.com"
+  ],
+  "spider_settings": {
+    "download_delay": 2.0,
+    "concurrent_requests": 1,
+    "output_format": "all",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  },
+  "filter_settings": {
+    "min_seeders": 0,
+
+    "max_pages": 10
+  },
+  "output_settings": {
+    "json_file": "output/torrents_{timestamp}.json",
+    "csv_file": "output/torrents_{timestamp}.csv",
+    "sqlite_file": "output/torrents_{timestamp}.db"
+  }
+}
